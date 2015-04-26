@@ -1,0 +1,36 @@
+{
+  "server": {
+    "address": "127.0.0.1",
+    "port": 443,
+    "ssl": true,
+    "key": "/path/to/server.key",
+    "cert": "/path/to/server.crt",
+    "ca": [
+      "/path/to/ca1.crt",
+      "/path/to/ca2.crt"
+    ],
+    "redirect": 80
+  },
+  "storage": {
+    "name": "muttrpod",
+    "user": "db_user",
+    "pass": "db_password",
+    "nodes": [
+      {
+        "host": "127.0.0.1",
+        "port": "27017"
+      }
+    ]
+  },
+  "network": {
+    "address": "127.0.0.1",
+    "port": 44678,
+    "seeds": [
+      {
+        "address": "some.known.peer>",
+        "port": 44678
+      }
+    ]
+  },
+  "verbosity": 3
+}
