@@ -32,5 +32,6 @@
       }
     ]
   },
-  "verbosity": 3
+  "verbosity": 3,
+  "promiscuous": false
 }
