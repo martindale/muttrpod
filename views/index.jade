@@ -1,0 +1,65 @@
+doctype html
+head
+  title MuttrPod
+  link(rel='stylesheet', href='/css/main.css')
+  script(src='/js/lookup.js')
+body
+  header
+    .wrapper
+      h1#logo MuttrPod
+  .wrapper
+    .half
+      section
+        h2.server.icon Server
+        table
+          tbody
+            tr
+              td 
+                strong MuttrPod Version
+              td v#{server.version}
+            tr 
+              td 
+                strong Server Uptime
+              td #{server.uptime}
+            tr 
+              td 
+                strong WebSockets URI
+              td #{server.websocketsURI}
+            tr
+              td 
+                strong Identity Registration
+              td #{server.registrationStatus}          
+    .half
+      section
+        h2.network.icon Network
+        table
+          tbody
+            tr 
+              td 
+                strong UDP Port
+              td #{network.udpPort}
+            tr
+              td 
+                strong Contacts in Routing Table
+              td #{network.routerSize}
+            tr 
+              td 
+                strong Connected Clients
+              td #{network.busSize}
+            tr
+              td 
+                strong Messages Stored
+              td #{network.messageCount}
+  .wrapper
+    form#search(method='GET', action='/')
+      input(type='text', placeholder='Enter Message Hash (SHA-1)')
+      input(type='submit', value='Lookup')
+  footer
+    .wrapper
+      ul
+        li
+          a(href='https://gitlab.com/muttr/whitepaper') About |
+        li
+          a(href='https://gitlab.com/muttr/muttrpod')  Source |
+        li
+          a(href='bitcoin:1DxvscvN4hKRxh8tLEBPLRyWtZPox7BMgR')  Donate

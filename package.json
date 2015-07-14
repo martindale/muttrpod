@@ -1,6 +1,6 @@
 {
   "name": "muttrpod",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "directory server for the muttr network",
   "main": "index.js",
   "bin": {
@@ -31,7 +31,9 @@
     "commander": "^2.8.1",
     "express": "^4.12.3",
     "hat": "0.0.3",
+    "jade": "^1.11.0",
     "merge": "^1.2.0",
+    "moment": "^2.10.3",
     "mongoose": "^4.0.2",
     "muttr": "git://github.com/muttr/libmuttr",
     "openpgp": "^1.0.1",
