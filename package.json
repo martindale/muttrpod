@@ -35,7 +35,7 @@
     "merge": "^1.2.0",
     "moment": "^2.10.3",
     "mongoose": "^4.0.2",
-    "muttr": "^0.0.6",
+    "muttr": "^0.0.8",
     "openpgp": "^1.0.1",
     "request": "^2.55.0",
     "serve-favicon": "^2.2.0",
